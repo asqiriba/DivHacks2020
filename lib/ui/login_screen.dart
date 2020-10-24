@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'package:flutter_login/flutter_login.dart';
 import 'main_screen.dart';
 
@@ -6,9 +7,11 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Future nextPage() {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => MainScreen(),
-      ));
+      Timer(Duration(seconds: 3), () {
+        Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (context) => MainScreen(),
+        ));
+      });
     }
 
     return Scaffold(
