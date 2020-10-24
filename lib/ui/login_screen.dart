@@ -42,8 +42,7 @@ class LoginScreen extends StatelessWidget {
       ),
       body: FlutterLogin(
         title: 'ColNet',
-        //TODO: Upload a logo.
-        logo: 'assets/images/X.png',
+        logo: 'assets/images/logo.png',
         onLogin: (_) => nextPage(), //Implement login function here.
         onSignup: (_) => nextPage(), //Implement signup function here.
         onSubmitAnimationCompleted: () {

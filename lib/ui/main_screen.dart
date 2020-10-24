@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:col_net/models/task_data.dart';
+import 'package:col_net/widgets/tasks_add.dart';
+import 'package:col_net/widgets/tasks_list.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class MainScreen extends StatelessWidget {
@@ -17,6 +20,16 @@ class MainScreen extends StatelessWidget {
               fontWeight: FontWeight.bold),
           displayFullTextOnTap: true,
           stopPauseOnTap: true);
+    }
+
+    String profilePicture =
+        'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnypost.com%2Fwp-content%2Fuploads%2Fsites%2F2%2F2019%2F08%2Fparkland-shooting-survivor-now-freshman-at-columbia.jpg%3Fquality%3D80%26strip%3Dall&sp=1603565648T85ee78df72dbc1520f66b0792f93889a4e1bb3b3c4fdb5a590cab27ff8fbd242';
+
+    CircleAvatar profile({double radius = 40}) {
+      return CircleAvatar(
+        backgroundImage: NetworkImage(profilePicture),
+        radius: radius,
+      );
     }
 
     return Scaffold(
@@ -40,7 +53,7 @@ class MainScreen extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).viewInsets.bottom),
-                      child: SizedBox(),
+                      child: AddTaskScreen(),
                     ),
                   ));
         },
@@ -56,14 +69,18 @@ class MainScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  CircleAvatar(
-                    child: Icon(
-                      Icons.list,
-                      size: 35,
-                      color: Colors.lightBlueAccent,
-                    ),
-                    backgroundColor: Colors.white,
-                    radius: 30,
+                  Stack(
+                    children: [
+                      profile(),
+                      Positioned(
+                        child: CircleAvatar(
+                          backgroundColor: Colors.lightGreen,
+                          radius: 10,
+                        ),
+                        right: 0,
+                        top: 60,
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 10,
@@ -76,6 +93,26 @@ class MainScreen extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Info',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      FloatingActionButton.extended(
+                        elevation: 10,
+                        label: Text('Log out',
+                            style: TextStyle(
+                              color: Colors.white,
+                            )),
+                        backgroundColor: Colors.deepPurple,
+                        onPressed: () => Navigator.pop(context),
+                      )
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -83,9 +120,8 @@ class MainScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(left: 50, right: 50, bottom: 5),
                 child: Container(
-                  child: SizedBox.shrink(),
-                  width: 5000,
-                  height: 50,
+                  child: TasksList(),
+                  width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
