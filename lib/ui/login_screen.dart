@@ -5,14 +5,18 @@ import 'main_screen.dart';
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Future()
+    Future nextPage() {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+        builder: (context) => MainScreen(),
+      ));
+    }
 
     return FlutterLogin(
       title: 'ColNet',
       //TODO: Upload a logo.
       logo: 'assets/images/ecorp.png',
-      onLogin: (_) => Future(null), //Implement login function here.
-      onSignup: (_) => Future(null), //Implement signup function here.
+      onLogin: (_) => nextPage(), //Implement login function here.
+      onSignup: (_) => nextPage(), //Implement signup function here.
       onSubmitAnimationCompleted: () {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) => MainScreen(),
