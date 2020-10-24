@@ -6,7 +6,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     TypewriterAnimatedTextKit printSlogan() {
       return TypewriterAnimatedTextKit(
-          speed: Duration(milliseconds: 2000),
+          speed: Duration(milliseconds: 1000),
           totalRepeatCount: 4,
           repeatForever: true, //this will ignore [totalRepeatCount]
           pause: Duration(milliseconds: 1000),
@@ -76,18 +76,24 @@ class MainScreen extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  Text('Content here :D'),
                 ],
               ),
             ),
             Expanded(
-              child: Container(
-                child: SizedBox(),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
+              child: Padding(
+                padding: EdgeInsets.only(left: 50, right: 50, bottom: 5),
+                child: Container(
+                  child: SizedBox.shrink(),
+                  width: 5000,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20)),
+                      topRight: Radius.circular(20),
+                      bottomLeft: Radius.circular(20),
+                    ),
+                  ),
                 ),
               ),
             ),
