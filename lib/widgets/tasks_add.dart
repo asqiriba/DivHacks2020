@@ -6,7 +6,8 @@ class AddTaskScreen extends StatelessWidget {
   String newTitle;
   CircleAvatar newProfile = CircleAvatar(
     backgroundImage: NetworkImage(
-        'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnypost.com%2Fwp-content%2Fuploads%2Fsites%2F2%2F2019%2F08%2Fparkland-shooting-survivor-now-freshman-at-columbia.jpg%3Fquality%3D80%26strip%3Dall&sp=1603565648T85ee78df72dbc1520f66b0792f93889a4e1bb3b3c4fdb5a590cab27ff8fbd242'),
+      'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnypost.com%2Fwp-content%2Fuploads%2Fsites%2F2%2F2019%2F08%2Fparkland-shooting-survivor-now-freshman-at-columbia.jpg%3Fquality%3D80%26strip%3Dall&sp=1603565648T85ee78df72dbc1520f66b0792f93889a4e1bb3b3c4fdb5a590cab27ff8fbd242',
+    ),
     radius: 20,
   );
 

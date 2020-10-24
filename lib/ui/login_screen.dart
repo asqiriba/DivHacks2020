@@ -35,32 +35,35 @@ class LoginScreen extends StatelessWidget {
     }
 
     return Scaffold(
-//      floatingActionButton: FloatingActionButton.extended(
-//        label: Text(
-//          'About us',
-//          style: TextStyle(
-//            color: Colors.white,
-//          ),
-//        ),
-//        icon: Icon(
-//          Icons.assignment_ind,
-//          color: Colors.white,
-//        ),
-//        backgroundColor: Colors.deepPurpleAccent,
-//        onPressed: () {
-//          showModalBottomSheet(
-//              context: context,
-//              isScrollControlled: true,
-//              builder: (context) => SingleChildScrollView(
-//                    child: Container(
-//                      padding: EdgeInsets.only(
-//                          bottom: MediaQuery.of(context).viewInsets.bottom),
-//                      child: SizedBox(),
-//                    ),
-//                  ));
-//        },
-//      ),
+      floatingActionButton: FloatingActionButton.extended(
+        heroTag: null,
+        label: Text(
+          'About us',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        icon: Icon(
+          Icons.assignment_ind,
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.deepPurpleAccent,
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              isScrollControlled: true,
+              builder: (context) => SingleChildScrollView(
+                    child: Container(
+                      padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom),
+                      child: SizedBox(),
+                    ),
+                  ));
+        },
+      ),
       body: FlutterLogin(
+        logoTag: 'x',
+        titleTag: 'e',
         title: 'ColNet',
         logo: 'assets/images/logo.png',
         onLogin: _authUser, //Implement login function here.

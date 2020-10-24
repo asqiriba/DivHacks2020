@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:col_net/models/task_data.dart';
+import 'package:flutter_login/theme.dart';
 import 'package:col_net/widgets/tasks_add.dart';
 import 'package:col_net/widgets/tasks_list.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -34,6 +34,7 @@ class MainScreen extends StatelessWidget {
 
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: LoginThemeHelper.loginTextStyle,
         label: Text(
           'Add',
           style: TextStyle(
