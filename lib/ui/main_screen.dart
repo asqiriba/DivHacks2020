@@ -1,3 +1,4 @@
+import 'package:col_net/ui/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/theme.dart';
 import 'package:col_net/widgets/tasks_add.dart';
@@ -23,8 +24,7 @@ class MainScreen extends StatelessWidget {
     }
 
     String profilePicture =
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYW_wPI6R9IH7aXVGkpZ1aDDKrNLhRe-Rxiw&usqp=CAU'
-    ;
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYW_wPI6R9IH7aXVGkpZ1aDDKrNLhRe-Rxiw&usqp=CAU';
 
     CircleAvatar profile({double radius = 40}) {
       return CircleAvatar(
@@ -111,7 +111,12 @@ class MainScreen extends StatelessWidget {
                               color: Colors.white,
                             )),
                         backgroundColor: Colors.deepPurple,
-                        onPressed: () => Navigator.pop(context),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ));
+                        },
                       )
                     ],
                   ),
