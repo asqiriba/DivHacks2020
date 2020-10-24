@@ -23,7 +23,8 @@ class MainScreen extends StatelessWidget {
     }
 
     String profilePicture =
-        'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnypost.com%2Fwp-content%2Fuploads%2Fsites%2F2%2F2019%2F08%2Fparkland-shooting-survivor-now-freshman-at-columbia.jpg%3Fquality%3D80%26strip%3Dall&sp=1603565648T85ee78df72dbc1520f66b0792f93889a4e1bb3b3c4fdb5a590cab27ff8fbd242';
+        'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRSlAgeiTss4hIfrzld4vOe1l6kewd-mMhwbuZgH7L9ODLar_g%26s&sp=1603569172T75607b05a641a4b24e39eb8328db78cb1aa124d2ab4fd23e84b35e46aed8cc1a'
+    ;
 
     CircleAvatar profile({double radius = 40}) {
       return CircleAvatar(
@@ -87,7 +88,7 @@ class MainScreen extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    'ColNet',
+                    'CloseKnit Community',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 50,
