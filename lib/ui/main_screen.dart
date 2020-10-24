@@ -23,7 +23,7 @@ class MainScreen extends StatelessWidget {
     }
 
     String profilePicture =
-        'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRSlAgeiTss4hIfrzld4vOe1l6kewd-mMhwbuZgH7L9ODLar_g%26s&sp=1603569172T75607b05a641a4b24e39eb8328db78cb1aa124d2ab4fd23e84b35e46aed8cc1a'
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYW_wPI6R9IH7aXVGkpZ1aDDKrNLhRe-Rxiw&usqp=CAU'
     ;
 
     CircleAvatar profile({double radius = 40}) {
