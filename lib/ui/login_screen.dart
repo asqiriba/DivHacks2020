@@ -6,6 +6,8 @@ import 'main_screen.dart';
 const users = const {
   'e@e.e': 'eee',
   'user@mail.com': 'pass',
+  'svp2128@columbia.edu': 'edu',
+  'mrm8273@columbia.edu': 'edu'
 };
 
 class LoginScreen extends StatelessWidget {
