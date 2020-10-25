@@ -19,6 +19,7 @@
   - Android Studio
   - GitHub
   - Git
+  - Dart
 
 ## Development
 >We divided different tasks to each teammate. Although we had a differing range of skill sets, we used that to our advantage. We combined both familiar and new languages and toolkits to create a website that is easy to use and available to the use of college students. By working as a team and helping one another solve the various challenges we ran into, we created our website.
