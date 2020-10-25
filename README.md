@@ -2,6 +2,8 @@
 # Divhacks2020 ColNet webapp.
 # Close Knit Community
 
+## Evelator Pitch 
+>We are an organization to help undergraduate and graduate students navigate their ways to achieve their dream degrees. Through our close-knit college communities, students have opportunities to not only contribute towards helping fellow peers but also to seek guidance regarding particular institutional courses and career advice. We hope to be a platform to allow you to engage with your community by lending a helping hand. This platform will allow you to post the questions that you may have regarding your university or career-wise, and another student in your community will be able to quickly answer your posts.
 
 ## What Inspired Us
 
