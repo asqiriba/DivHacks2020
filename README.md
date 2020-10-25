@@ -29,7 +29,7 @@
 >You may log into our website by mounting the website locally and logging in with the email 'test@test.edu' and password 'test' 
 
 ## What we learned
->Throughout this hackathon, we have learned lots of new, valuable knowledge that will help us significantly in our CS careers. In fact, this was the first hackathon for our team! We learned how to properly use GitHub as a resource to allow us to collaborate and easily access our work. In addition, we were introduced to Flutter and DART, and we are excited to explore these tools further. We look forward to joining DivHacks in the upcoming years. 
+>Throughout this hackathon, we have learned lots of new, valuable knowledge that will help us significantly in our CS careers. In fact, this was the first hackathon for our team! We learned how to properly use GitHub as a resource to allow us to collaborate and easily access our work. In addition, we were introduced to Flutter and Dart, and we are excited to explore these tools further. We look forward to joining DivHacks in the upcoming years. 
 
 ## What’s next for CloseKnit Community
 >Due to time constraints, we have not fully implemented all that we would like to. Currently, we have a Columbia community, but we would like to expand this platform to all colleges and universities around the US. Furthermore, we would like to continue to better our user experience on our website and mobile application by implementing more features such as direct messaging and a search bar. Nevertheless, we have enjoyed bringing our vision to life, and we hope you feel the same. 
