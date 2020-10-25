@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_login/flutter_login.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:col_net/ui/web_screen.dart';
 import 'main_screen.dart';
 
 const users = const {
@@ -60,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                     child: Container(
                       padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).viewInsets.bottom),
-                      child: SizedBox(),
+                      child: HelpScreen(),
                     ),
                   ));
         },
