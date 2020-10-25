@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    
+    <head> 
+        <title> closeKnit.com </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="bar" id="section0"></div>
+            <img  src="logoMain.JPG" >
+          <div class="animated-text">
+            <h1 data-text="//About Us//   ">//About Us//</h1>
+          </div>
+        </div>
+
+
+
+            <nav>
+                <ul>
+                    <li><a href="#section1">Who</a></li>
+                    <li><a href="#section2">What</a></li>
+                    <li><a href="#section3">Why</a></li>
+                    <li><a href="#section4">The Team</a></li>
+                    <li><a href="#section5">Thanks</a></li>
+                </ul>
+            </nav>
+        
+
+            
+        </header>
+
+       <!--<h1 style="text-align: center; color: aliceblue;">About Us</h1>-->
+       <div class = "test" id="section1">
+       <div class="container" >
+        <div class="overText">Who is Close Knit Community?</div>
+        <div class="overlay">
+          <div class="text">We are an organization dedicated to helping<br>
+             undergraduate and graduate students <br>
+            navigate their ways onto achieve their dream degrees.<br>
+               
+               We hope to be a platform to allow you to <br>engage with your community
+               <br> by lending a helping hand. <br>
+               <a href="#section0">back to top</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="test2"  id="section2">
+      <div class="container2">
+        <div class="overText2">What Do We Stand For?</div>
+        <div class="overlay2">
+          <div class="text2">We believe that students should<br>
+            not only be given the chance to engage with <br>
+            their local community, <br>
+            but to also not shy away from <br>
+            seeking guidance <br>
+            in particular institutional courses <br>and career advice. <br><br>
+            <a href="#section0">back to top</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test3" id="section3">
+      <div class="container3" >
+        <div class="overText3">What Will We Achieve?</div>
+        <div class="overlay3">
+          <div class="text3">We hope to be a platform to allow you to 
+              <br>engage with your community
+            <br> by lending a helping hand. <br>
+            <a href="#section0">back to top</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test4" id="section4">
+        <div class="container4" >
+          <div class="overText4">&nbsp &nbsp &nbsp Developers</div>
+          <div class="overlay4">
+            <div class="text4">Hassan Asqiriba
+                <br>Shivani Patel
+              <br> Alexis Castillo <br>
+              <a href="#section0">back to top</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test5" id="section5">
+        <div class="container5" >
+          <div class="overText5">Special Thanks To...</div>
+          <div class="overlay5">
+            <div class="text5">Thank you to DivHacks and <br> the amazing sponsers for giving us<br>
+                the opportunity to come together<br>
+                and work on this amazing project!<br><br>
+              <a href="#section0">back to top</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+</html>
