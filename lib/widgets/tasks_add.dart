@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:col_net/models/task_data.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AddTaskScreen extends StatelessWidget {
   String newTitle;
@@ -22,11 +23,17 @@ class AddTaskScreen extends StatelessWidget {
           children: <Widget>[
             Text(
               'Add New Post',
-              textAlign: TextAlign.center,
-              style: TextStyle(
+              style: GoogleFonts.staatliches(
+                color: Color(0xff571845),
                 fontSize: 30,
-                color: Colors.deepPurple,
               ),
+              //Text(
+              //  'Add New Post',
+              //  textAlign: TextAlign.center,
+              //  style: TextStyle(
+              //    fontSize: 30,
+              //    color: Color(0xff571845),
+              //  ),
             ),
             TextField(
               autofocus: true,
@@ -41,9 +48,12 @@ class AddTaskScreen extends StatelessWidget {
             FlatButton(
               child: Text(
                 'Add',
-                style: TextStyle(color: Colors.white),
+                style: GoogleFonts.staatliches(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
               ),
-              color: Colors.deepPurple,
+              color: Color(0xff571845),
               onPressed: () {
                 Provider.of<TaskData>(context, listen: false).addTask(
                     newTitle,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TaskTile extends StatelessWidget {
   final bool isChecked;
@@ -20,16 +21,21 @@ class TaskTile extends StatelessWidget {
       leading: taskImage,
       title: Text(
         taskTitle,
-        style: TextStyle(
-          color: Colors.deepPurple,
+        style: GoogleFonts.notoSans(
+          color: Color(0xff571845),
           decoration: isChecked ? TextDecoration.lineThrough : null,
         ),
+
+        //style: TextStyle(
+        //  color: Color(0xff571845),
+        //  decoration: isChecked ? TextDecoration.lineThrough : null,
+        //),
       ),
       trailing: Checkbox(
-        focusColor: Colors.deepPurple,
+        focusColor: Color(0xffff5733),
         value: isChecked,
         onChanged: checkboxCallback,
-        activeColor: Colors.deepPurple,
+        activeColor: Color(0xffff5733),
       ),
       onLongPress: onLongPressCallback,
     );

@@ -6,7 +6,8 @@ import 'dart:collection';
 class TaskData extends ChangeNotifier {
   List<Task> _tasks = [
     Task(
-        name: 'Post 1 (Already taken if lineThrough)',
+        name:
+            'I\'m a sophomore right now and we have to declare our majors soon, but I\'m really torn between computer science and pre-med. I\'m currently in AP and biology, \nand it\'s really difficult, but I am unsure of what to do. Is it possible to double major in these fields even though they are completely different? Please advice.',
         isDone: true,
         img: Stack(
           children: [
@@ -28,7 +29,8 @@ class TaskData extends ChangeNotifier {
           ],
         )),
     Task(
-        name: 'Post 2',
+        name:
+            'I\'m a senior right now majoring in computer science. I have a full-time offer as a Front End Developer, but I don\'t know if I should pursue further education. I \nfeel like I have taken a lot of the master level coursework offered by Columbia. Is any current Master student in CS willing to have a chat to help me \ndecide on what I should do?',
         isDone: false,
         img: Stack(
           children: [
@@ -49,7 +51,8 @@ class TaskData extends ChangeNotifier {
           ],
         )),
     Task(
-        name: 'Post 3',
+        name:
+            'How do I start a research project with a professor? I know it\'s typical to ask professors that you are familar with, but none of my professors are doing research that \nI am interested in.',
         isDone: false,
         img: Stack(
           children: [
@@ -70,7 +73,8 @@ class TaskData extends ChangeNotifier {
           ],
         )),
     Task(
-        name: 'Post 4',
+        name:
+            'I\'m trying to get an internship in Data Science for the summer, but I\'m not sure how this process works and what their expectations of me are exactly.',
         isDone: false,
         img: Stack(
           children: [
@@ -91,7 +95,8 @@ class TaskData extends ChangeNotifier {
           ],
         )),
     Task(
-        name: 'Post 5',
+        name:
+            'Hi, I\'m a freshmen, and I can\'t concentrate in my dorm room in John Jay. Are there any good quiet places to study on campus?',
         isDone: false,
         img: Stack(
           children: [

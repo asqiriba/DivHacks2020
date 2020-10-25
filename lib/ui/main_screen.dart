@@ -4,6 +4,7 @@ import 'package:flutter_login/theme.dart';
 import 'package:col_net/widgets/tasks_add.dart';
 import 'package:col_net/widgets/tasks_list.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -50,7 +51,7 @@ class MainScreen extends StatelessWidget {
           Icons.add,
           color: Colors.white,
         ),
-        backgroundColor: Color(0xFFffc300),
+        backgroundColor: Color(0xFFff5733),
         onPressed: () {
           showModalBottomSheet(
               context: context,
@@ -93,17 +94,16 @@ class MainScreen extends StatelessWidget {
                   ),
                   Text(
                     'CloseKnit Community',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 50,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: GoogleFonts.staatliches(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.w300),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Info',
+                        'Welcome to Columbia & Barnard\'s CloseKnit Community. Feel free to post any of your questions, ask for advice on academics, and engage with your peers.',
                         style: TextStyle(
                           color: Colors.white,
                         ),
@@ -114,7 +114,7 @@ class MainScreen extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                             )),
-                        backgroundColor: Color(0xff),
+                        backgroundColor: Color(0xffffc300),
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(
