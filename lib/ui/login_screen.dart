@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_login/flutter_login.dart';
-import 'package:col_net/ui/web_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'main_screen.dart';
 
 const users = const {
@@ -38,6 +38,15 @@ class LoginScreen extends StatelessWidget {
       });
     }
 
+    _launchURL() async {
+      const url = 'https://tephritic-pressure.000webhostapp.com';
+      if (await canLaunch(url)) {
+        await launch(url);
+      } else {
+        throw 'Could not launch $url';
+      }
+    }
+
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
         heroTag: null,
@@ -52,18 +61,7 @@ class LoginScreen extends StatelessWidget {
           color: Colors.white,
         ),
         backgroundColor: Color(0xffff5733),
-        onPressed: () {
-          showModalBottomSheet(
-              context: context,
-              isScrollControlled: true,
-              builder: (context) => SingleChildScrollView(
-                    child: Container(
-                      padding: EdgeInsets.only(
-                          bottom: MediaQuery.of(context).viewInsets.bottom),
-                      child: HelpScreen(),
-                    ),
-                  ));
-        },
+        onPressed: _launchURL,
       ),
       body: FlutterLogin(
         logoTag: 'x',
