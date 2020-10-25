@@ -10,11 +10,15 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     TypewriterAnimatedTextKit printSlogan() {
       return TypewriterAnimatedTextKit(
-          speed: Duration(milliseconds: 1000),
+          speed: Duration(milliseconds: 500),
           totalRepeatCount: 4,
           repeatForever: true, //this will ignore [totalRepeatCount]
           pause: Duration(milliseconds: 1000),
-          text: ["do IT!", "do it RIGHT!", "do it RIGHT NOW!"],
+          text: [
+            "Lending a Helping Hand",
+            "Be of Service",
+            "Contribute to your Campus Community"
+          ],
           textStyle: TextStyle(
               color: Colors.white24,
               fontSize: 32.0,
@@ -46,7 +50,7 @@ class MainScreen extends StatelessWidget {
           Icons.add,
           color: Colors.white,
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Color(0xFFffc300),
         onPressed: () {
           showModalBottomSheet(
               context: context,
@@ -60,7 +64,7 @@ class MainScreen extends StatelessWidget {
                   ));
         },
       ),
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Color(0xff900c3e),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,7 +114,7 @@ class MainScreen extends StatelessWidget {
                             style: TextStyle(
                               color: Colors.white,
                             )),
-                        backgroundColor: Colors.deepPurple,
+                        backgroundColor: Color(0xff),
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(

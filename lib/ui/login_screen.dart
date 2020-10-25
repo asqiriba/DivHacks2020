@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_login/flutter_login.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'main_screen.dart';
 
 const users = const {
   'e@e.e': 'eee',
+  'a': 'a',
   'user@mail.com': 'pass',
   'svp2128@columbia.edu': 'edu',
   'mrm8273@columbia.edu': 'edu'
@@ -49,7 +51,7 @@ class LoginScreen extends StatelessWidget {
           Icons.assignment_ind,
           color: Colors.white,
         ),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor: Color(0xffff5733),
         onPressed: () {
           showModalBottomSheet(
               context: context,
@@ -77,6 +79,8 @@ class LoginScreen extends StatelessWidget {
         },
         onRecoverPassword: (_) => nextPage(),
       ),
+
+      //body: Center(Text("whatsup", style: GoogleFonts.turretRoad(fontSize: 48))),
     );
   }
 }
