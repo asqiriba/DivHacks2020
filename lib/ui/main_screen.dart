@@ -103,7 +103,7 @@ class MainScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Welcome to Columbia & Barnard\'s CloseKnit Community. Feel free to post any of your questions or ask for advice on academics to engage with your peers.',
+                        'Welcome to Columbia & Barnard\'s CloseKnit Community, a platform where you can engage with your peers. Feel free to post any of your questions or ask for advice on academics.',
                         style: GoogleFonts.notoSans(
                           fontSize: 14,
                           color: Colors.white,
