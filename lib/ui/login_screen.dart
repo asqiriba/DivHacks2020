@@ -68,8 +68,8 @@ class LoginScreen extends StatelessWidget {
       body: FlutterLogin(
         logoTag: 'x',
         titleTag: 'e',
-        title: 'CloseKnit Community',
-        logo: 'assets/images/logo.png',
+        title: '',
+        logo: 'assets/images/logo_main.png',
         onLogin: _authUser, //Implement login function here.
         onSignup: _authUser, //Implement signup function here.
         onSubmitAnimationCompleted: () {
