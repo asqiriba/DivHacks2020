@@ -6,9 +6,8 @@ import 'main_screen.dart';
 
 const users = const {
   'e@e.e': 'eee',
-  'a': 'a',
   'user@mail.com': 'pass',
-  'svp2128@columbia.edu': 'edu',
+  'svp2128@columbia.edu': 'shivanipatel',
   'mrm8273@columbia.edu': 'edu'
 };
 
