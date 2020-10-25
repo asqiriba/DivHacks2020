@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
             overline: TextStyle(fontFamily: 'Merienda'),
           ),
         ),
-        initialRoute: '/login',
+        initialRoute: '/main',
         routes: {
           '/login': (context) => LoginScreen(),
           '/main': (context) => MainScreen(),
