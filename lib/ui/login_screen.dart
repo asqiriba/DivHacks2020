@@ -7,8 +7,9 @@ import 'main_screen.dart';
 const users = const {
   'e@e.e': 'eee',
   'user@mail.com': 'pass',
+  'test@test.edu': 'test',
   'svp2128@columbia.edu': 'shivanipatel',
-  'mrm8273@columbia.edu': 'edu'
+  'mrm8273@columbia.edu': 'edu',
 };
 
 class LoginScreen extends StatelessWidget {
@@ -78,8 +79,6 @@ class LoginScreen extends StatelessWidget {
         },
         onRecoverPassword: (_) => nextPage(),
       ),
-
-      //body: Center(Text("whatsup", style: GoogleFonts.turretRoad(fontSize: 48))),
     );
   }
 }

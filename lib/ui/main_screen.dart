@@ -96,15 +96,16 @@ class MainScreen extends StatelessWidget {
                     'CloseKnit Community',
                     style: GoogleFonts.staatliches(
                         color: Colors.white,
-                        fontSize: 50,
+                        fontSize: 60,
                         fontWeight: FontWeight.w300),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Welcome to Columbia & Barnard\'s CloseKnit Community. Feel free to post any of your questions, ask for advice on academics, and engage with your peers.',
-                        style: TextStyle(
+                        'Welcome to Columbia & Barnard\'s CloseKnit Community. Feel free to post any of your questions or ask for advice on academics to engage with your peers.',
+                        style: GoogleFonts.notoSans(
+                          fontSize: 14,
                           color: Colors.white,
                         ),
                       ),

@@ -27,13 +27,6 @@ class AddTaskScreen extends StatelessWidget {
                 color: Color(0xff571845),
                 fontSize: 30,
               ),
-              //Text(
-              //  'Add New Post',
-              //  textAlign: TextAlign.center,
-              //  style: TextStyle(
-              //    fontSize: 30,
-              //    color: Color(0xff571845),
-              //  ),
             ),
             TextField(
               autofocus: true,
