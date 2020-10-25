@@ -118,7 +118,7 @@ class TaskData extends ChangeNotifier {
         )),
     Task(
         name:
-            'Zeena S\nI\'m new to CS, but I\'m loving it so far. I\'m in 1004 with Prof. Cannon, and I was wondering CS clubs are available on campus.\n',
+            'Zeena S\nI\'m new to CS, but I\'m loving it so far. I\'m in 1004 with Prof. Cannon, and I was wondering what CS clubs are available on campus.\n',
         isDone: false,
         img: Stack(
           children: [
@@ -140,7 +140,7 @@ class TaskData extends ChangeNotifier {
         )),
     Task(
         name:
-            'Jailyn B\nHi, I\'m a vegan, and I am looking to find good stable food options. Are there many vegan friendly places? I find that Barnard\'s dining halls are more inclusive, and I was wondering if there was any good places on Columbia\'s main campus.\n',
+            'Jailyn B\nHi, I\'m a vegan, and I am looking to find good stable food options. Are there any good vegan friendly places? I find that Barnard\'s dining halls are more inclusive, and I was wondering if there was any good places on Columbia\'s main campus.\n',
         isDone: false,
         img: Stack(
           children: [
